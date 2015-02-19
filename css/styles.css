@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'digital-7regular';
-    src: url('../font/digital-7.regular.woff2') format('woff2');
+    font-family: 'crystal';
+    src: url('../font/CRYSTAL-webfont.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 
@@ -21,8 +21,8 @@
 	margin-bottom: 10px;
 }
 .table.time-table{
-	font-family: 'digital-7regular';
-	font-weight: bold;
+	font-family: 'crystal';
+	font-weight: normal;
 	background: #fff;
 	color: #ecf0f1;
 	border-collapse: collapse;
@@ -35,20 +35,56 @@
 	text-align: left;
 	font-size: 15px;
 	border-bottom: 0;
+	text-align: center;
 }
 .table.time-table td{
 	padding: 10px;
-	text-align: left;
-	font-size: 15px;
+	text-align: center;
+	font-size: 14px;
 }
-
+.table.time-table td a, .table.time-table td a:active{
+	text-decoration: underline;
+	color: #2c3e50;
+}
+.table.time-table td a:hover, .table.time-table td a:focus{
+	text-decoration: none;
+}
 .table.time-table tr{
 	background: #ecf0f1;
 	color: #2c3e50 ;
 }
+.time-table .status span{
+	border-radius: 4px;
+	padding: 3px 5px 0;
+	display: inline-block;
+	min-width: 100px;
+	text-align: center;
+	color: #fff;
+}
+.time-table .status .departing{
+	background: #f1c40f;
+}
+.time-table .status .approuch{
+	background: #2ecc71;
+}
+.time-table .status .boarding{
+	background: #3498db;
+}
+.time-table .status .en-route{
+	background: #1abc9c;
+}
+.time-table .status .landing{
+	background: #f39c12;
+}
+.time-table .status .on-blocks{
+	background: #95a5a6;
+}
+.time-table .status .booked{
+	background: #e74c3c;
+}
 @media(min-width: 992px) {
 	.table.time-table td, .table.time-table th{
-		font-size: 17px;
+		font-size: 16px;
 	}
 	.table.time-table th:nth-child(4), table th:nth-child(3){
 		min-width: 250px;

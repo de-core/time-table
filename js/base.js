@@ -29,7 +29,8 @@ $(document).ready(function(){
 	var wow = new WOW({
 		boxClass: 'wow',
 		animateClass: 'animated',
-		offset: '50'
+		offset: '80'
 		})
 	wow.init();
+
 })
