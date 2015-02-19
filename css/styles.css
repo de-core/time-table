@@ -1,6 +1,10 @@
 @font-face {
     font-family: 'crystal';
-    src: url('../font/CRYSTAL-webfont.woff2') format('woff2');
+    src: url('../font/CRYSTAL-webfont.eot');
+    src: url('../font/CRYSTAL-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/CRYSTAL-webfont.woff2') format('woff2'),
+         url('../font/CRYSTAL-webfont.woff') format('woff'),
+         url('../font/CRYSTAL-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -84,7 +88,7 @@
 }
 @media(min-width: 992px) {
 	.table.time-table td, .table.time-table th{
-		font-size: 16px;
+		font-size: 15px;
 	}
 	.table.time-table th:nth-child(4), table th:nth-child(3){
 		min-width: 250px;
