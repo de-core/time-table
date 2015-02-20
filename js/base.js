@@ -11,6 +11,7 @@ $(document).ready(function(){
 		loop: true,
 		autoplay: 3000,
 		speed: 1000,
+		slideActiveClass: 'active',
 		// Navigation arrows
 		nextButton: '.swiper-button-next',
 		prevButton: '.swiper-button-prev',

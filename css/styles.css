@@ -15,7 +15,13 @@
 .swiper-slide .slider-text{
 	position: absolute;
 	width: 100%;
-	top: 0;
+	top: 50%;
+	opacity: 0;
+}
+.swiper-slide.active .slider-text{
+	top: 20%;
+	opacity: 1;
+	transition: all 5s;
 }
 .swiper-slide img{
 	width: 100%;
