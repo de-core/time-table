@@ -21,7 +21,10 @@
 .swiper-slide.active .slider-text{
 	top: 20%;
 	opacity: 1;
-	transition: all 5s;
+	-webkit-transition: all 3s;
+	-moz-transition: all 3s;
+	-o-transition: all 3s;
+	transition: all 3s;
 }
 .swiper-slide img{
 	width: 100%;
