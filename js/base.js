@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+//Slider
 	var h_h = $('header').height();
 	var w_h = $(window).height()
 	var h = w_h - h_h;
@@ -14,6 +15,7 @@ $(document).ready(function(){
 		nextButton: '.swiper-button-next',
 		prevButton: '.swiper-button-prev',
 	})
+
 //Time and date setting
 	var currentTime = new Date();
 	var month = currentTime.getUTCMonth();
