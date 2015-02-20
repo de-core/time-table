@@ -6,7 +6,7 @@ $(document).ready(function(){
 	var h = w_h - h_h;
 	console.log(w_h)
 	$('.swiper-container').css('max-height', h)
-	var mySwiper = new Swiper ('.swiper-container', {
+	var mySwiper = new Swiper ('.swiper-container',{
 		direction: 'horizontal',
 		loop: true,
 		autoplay: 3000,
@@ -14,6 +14,9 @@ $(document).ready(function(){
 		// Navigation arrows
 		nextButton: '.swiper-button-next',
 		prevButton: '.swiper-button-prev',
+	})
+	$('.swiper-button-prev, .swiper-button-next').click(function(){
+		mySwiper.startAutoplay();
 	})
 
 //Time and date setting
