@@ -4,12 +4,11 @@ $(document).ready(function(){
 	var h_h = $('header').height();
 	var w_h = $(window).height()
 	var h = w_h - h_h;
-	console.log(w_h)
 	$('.swiper-container').css('max-height', h)
 	var mySwiper = new Swiper ('.swiper-container',{
 		direction: 'horizontal',
 		loop: true,
-		autoplay: 3000,
+		autoplay: 4000,
 		speed: 1000,
 		slideActiveClass: 'active',
 		// Navigation arrows
@@ -19,6 +18,7 @@ $(document).ready(function(){
 	$('.swiper-button-prev, .swiper-button-next').click(function(){
 		mySwiper.startAutoplay();
 	})
+
 
 //Time and date setting
 	var currentTime = new Date();
