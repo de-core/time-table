@@ -152,3 +152,45 @@
 .table.time-table tr+tr{
 	border-top: 1px solid #2c3e50;
 }
+
+/*Awards*/
+.awards{
+	color: #2c3e50;
+}
+.awards h5{
+	margin-right: 10px;
+}
+.awards .awards-wrap{
+	position: absolute;
+	display: none;
+	border: 2px solid #2c3e50;
+	border-radius: 5px;
+	padding: 10px;
+	left: 50%;
+	top: 40px;
+	width: 100px;
+	margin-left: -50px;
+	z-index: 1000;
+	background: #fff;
+}
+.awards ul.awards-list .img-thumbs{
+	width: 22px;
+	height: 30px;
+	opacity: 0.5;
+	cursor: pointer;
+}
+.awards .awards-wrap img{
+	width: 66px;
+	height: 90px;
+}
+.awards ul.awards-list li{
+	position: relative;
+	padding-top: 5px;
+}
+.awards ul.awards-list li:hover .img-thumbs{
+	opacity: 1;
+}
+
+.awards ul.awards-list li:hover .awards-wrap{
+	display: block;
+}
